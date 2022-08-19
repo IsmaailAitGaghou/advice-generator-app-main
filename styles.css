@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap');
+
+/* font-family: 'Manrope', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    background-color: hsl(217, 19%, 24%);    
+    border-radius: 10px;
+    box-shadow: 4px 4px 40px  rgba(0, 0, 0, 0.4);
+    padding: 35px;
+    color: #fff;
+
+}
+
+.slides {
+    width: 250px;
+}
+
+.dice-img {
+    position: absolute;
+    bottom: 0;
+}
+
+.divider {
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+
+.advice-block {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 40em) {
+    .slides {
+        width: 370px;
+    }
+
+    .divider {
+        width: 370px;
+    }
+}
+
+.slides .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    color: hsl(150, 100%, 66%);
+    font-size: 14px;
+}
+
+.slides .advice {
+    display: flex;
+    text-align: center;
+    line-height:1.5rem;
+    letter-spacing: 0.1rem;
+    font-size: 20px;
+}
+
+@media (min-width: 64em) {
+    .hide-for-desktop {
+        display: none;
+    }
+}   
+
+@media (max-width: 63.9375em) {
+    .hide-for-mobile {
+        display: none !important;
+    }
+}
+
+#advice-id{
+    margin-left: 10px;
+}
+
+.dice-img {
+    background-color: hsl(150, 100%, 66%);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -25px;
+    border: none;
+    cursor: pointer;
+}
+
+.dice-img:hover {
+    box-shadow: 5px 5px 45px hsl(150, 100%, 66%);
+}
+
+.dice {
+    width: 17px;
+}
